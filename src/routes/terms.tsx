@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { PlaceholderPage } from "@/components/placeholder-page";
+export const Route=createFileRoute("/terms")({head:()=>({meta:[{title:"Terms | HeatOnn"},{name:"description",content:"HeatOnn website terms."},{property:"og:title",content:"Terms | HeatOnn"},{property:"og:description",content:"HeatOnn website terms."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary"}],links:[{rel:"canonical",href:"/terms"}]}),component:()=> <PlaceholderPage eyebrow="Legal" title="Website Terms" description="The complete HeatOnn website terms will be published here."/>});
