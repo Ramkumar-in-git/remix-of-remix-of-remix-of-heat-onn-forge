@@ -12,7 +12,7 @@ export function ProductCard({ product }: { product: Product }) {
           width={1536}
           height={1024}
           loading="eager"
-                  decoding="async"
+          decoding="async"
           className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-[1.035]"
         />
       </div>
