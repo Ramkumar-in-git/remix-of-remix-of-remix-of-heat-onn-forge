@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -28,8 +29,28 @@ export function Wordmark({ inverse = false, className = "" }: { inverse?: boolea
 }
 
 export function SiteHeader() {
+  const [visible, setVisible] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY <= 16) {
+        setVisible(true);
+      } else if (Math.abs(currentScrollY - lastScrollY.current) > 6) {
+        setVisible(currentScrollY < lastScrollY.current);
+      }
+
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-40 border-b border-border/40 bg-background/55 shadow-[0_1px_24px_-16px_oklch(0.1_0_0_/_0.5)] backdrop-blur-2xl backdrop-saturate-150">
+    <header className={`sticky top-0 z-40 border-b border-border/40 bg-background/55 shadow-[0_1px_24px_-16px_oklch(0.1_0_0_/_0.5)] backdrop-blur-2xl backdrop-saturate-150 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${visible ? "translate-y-0" : "-translate-y-[100%]"}`}>
       <div className="section-shell grid h-16 grid-cols-[minmax(0,1fr)_auto] items-center gap-3 sm:h-20 sm:gap-4 lg:grid-cols-[auto_1fr_auto]">
         <Wordmark />
         <nav className="hidden items-center justify-center gap-6 lg:flex xl:gap-8" aria-label="Primary navigation">

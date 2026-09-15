@@ -14,7 +14,7 @@ export function Hero() {
   return (
     <section className="bg-surface-dark text-primary-foreground" id="top">
       <div className="grid min-h-[calc(100svh-5rem)] lg:grid-cols-[0.95fr_1.05fr]">
-        <div className="section-shell flex flex-col justify-center py-16 lg:max-w-none lg:pl-[max(5rem,calc((100vw-90rem)/2+5rem))] lg:pr-12">
+        <div className="section-shell order-2 flex flex-col justify-center py-16 lg:order-1 lg:max-w-none lg:pl-[max(5rem,calc((100vw-90rem)/2+5rem))] lg:pr-12">
           <div className="reveal-up max-w-3xl">
             <SectionLabel light>Heating Elements · Manufactured in Bengaluru</SectionLabel>
             <h1 className="text-4xl font-extrabold uppercase leading-[1.02] sm:text-6xl lg:text-7xl xl:text-[5.4rem]">
@@ -30,7 +30,7 @@ export function Hero() {
             </div>
           </div>
         </div>
-        <div className="relative min-h-[48vh] overflow-hidden lg:min-h-full">
+        <div className="relative order-1 min-h-[48vh] overflow-hidden lg:order-2 lg:min-h-full">
           <img src={images.hero} alt="Glowing stainless steel cartridge heating element on a workshop bench" width={1536} height={1024} fetchPriority="high" className="absolute inset-0 h-full w-full object-cover object-center" />
           <div className="absolute inset-0 bg-gradient-to-r from-surface-dark via-transparent to-transparent opacity-50" />
           <div className="absolute bottom-7 right-7 hidden items-center gap-3 text-[10px] font-bold uppercase text-primary-foreground/65 sm:flex">
