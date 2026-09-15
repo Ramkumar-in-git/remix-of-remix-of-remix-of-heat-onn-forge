@@ -34,6 +34,7 @@ function ProductsIndex() {
           eyebrow="Products"
           title="Heating elements, built to specification."
           description="Five heater categories manufactured in Peenya, Bengaluru — each made to the dimensions, wattage, voltage and termination your assembly requires."
+          variant="light"
         />
 
         <nav aria-label="Heater categories" className="border-b border-border bg-secondary">
