@@ -50,7 +50,7 @@ export function SiteHeader() {
   }, []);
 
   return (
-    <header className={`sticky top-0 z-40 border-b border-border/40 bg-background/55 shadow-[0_1px_24px_-16px_oklch(0.1_0_0_/_0.5)] backdrop-blur-2xl backdrop-saturate-150 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${visible ? "translate-y-0" : "-translate-y-full"}`}>
+    <header className={`sticky top-0 z-40 border-b border-border/40 bg-background/55 shadow-[0_1px_24px_-16px_oklch(0.1_0_0_/_0.5)] backdrop-blur-2xl backdrop-saturate-150 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none ${visible ? "translate-y-0" : "-translate-y-[100%]"}`}>
       <div className="section-shell grid h-16 grid-cols-[minmax(0,1fr)_auto] items-center gap-3 sm:h-20 sm:gap-4 lg:grid-cols-[auto_1fr_auto]">
         <Wordmark />
         <nav className="hidden items-center justify-center gap-6 lg:flex xl:gap-8" aria-label="Primary navigation">
