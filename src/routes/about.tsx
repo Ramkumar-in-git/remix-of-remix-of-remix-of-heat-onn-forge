@@ -57,7 +57,8 @@ function About() {
                   alt="HeatOnn workshop where heating elements are wound, formed and assembled"
                   width={1536}
                   height={1024}
-                  loading="lazy"
+                  loading="eager"
+                  decoding="async"
                   className="h-full w-full object-cover"
                 />
               </div>

@@ -162,7 +162,8 @@ function Contact() {
                 <iframe
                   title="HeatOnn location map, Peenya, Bengaluru"
                   src="https://www.google.com/maps?q=Peenya%202nd%20Stage%2C%20Bengaluru%20560058&output=embed"
-                  loading="lazy"
+                  loading="eager"
+                  decoding="async"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="h-64 w-full border-0 sm:h-72"
                 />

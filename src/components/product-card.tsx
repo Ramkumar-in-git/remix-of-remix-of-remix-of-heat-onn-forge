@@ -11,7 +11,8 @@ export function ProductCard({ product }: { product: Product }) {
           alt={product.imageAlt}
           width={1536}
           height={1024}
-          loading="lazy"
+          loading="eager"
+                  decoding="async"
           className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-[1.035]"
         />
       </div>

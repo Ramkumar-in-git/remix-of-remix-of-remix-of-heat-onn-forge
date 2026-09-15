@@ -58,7 +58,7 @@ function ProductsIndex() {
             {products.map((product, index) => (
               <article key={product.slug} id={product.slug} className="grid gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
                 <div className={`overflow-hidden rounded-md bg-secondary ${index % 2 ? "lg:order-2" : ""}`}>
-                  <img src={product.image} alt={product.imageAlt} width={1536} height={1024} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+                  <img src={product.image} alt={product.imageAlt} width={1536} height={1024} loading="eager" decoding="async" className="aspect-[4/3] w-full object-cover" />
                 </div>
                 <div>
                   <p className="text-[10px] font-bold uppercase text-heat">{`0${index + 1}`} · {product.specification}</p>
