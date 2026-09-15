@@ -79,6 +79,7 @@ function Contact() {
           eyebrow="Contact"
           title="Tell us your requirement."
           description="Share the operating temperature, dimensions, wattage or a sample photo, and we will come back with a construction and a price."
+          variant="heat"
         />
 
         <section className="section-shell py-16 lg:py-24">

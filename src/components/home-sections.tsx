@@ -69,7 +69,7 @@ export function AboutSection() {
     <section className="section-shell py-24 lg:py-36">
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <div className="relative overflow-hidden rounded-md">
-          <img src={images.workshop} alt="Technician winding resistance wire for heating elements in the HeatOnn workshop" width={1536} height={1024} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+          <img src={images.workshop} alt="Technician winding resistance wire for heating elements in the HeatOnn workshop" width={1536} height={1024} loading="eager" decoding="async" className="aspect-[4/3] w-full object-cover" />
           <div className="absolute bottom-0 left-0 bg-surface-dark p-5 text-primary-foreground">
             <p className="text-[10px] font-bold uppercase text-heat">Wound, formed, tested</p>
             <p className="mt-1 text-sm">Heaters made in-house.</p>
@@ -111,7 +111,7 @@ export function ProductCategories() {
               className={`group overflow-hidden rounded-md border border-border bg-card shadow-industrial transition duration-500 hover:-translate-y-1 hover:border-heat ${index === 0 ? "sm:col-span-2 lg:col-span-1" : ""}`}
             >
               <div className="overflow-hidden">
-                <img src={item.image} alt={item.imageAlt} width={1536} height={1024} loading="lazy" className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-[1.035]" />
+                <img src={item.image} alt={item.imageAlt} width={1536} height={1024} loading="eager" decoding="async" className="aspect-[4/3] w-full object-cover transition duration-700 group-hover:scale-[1.035]" />
               </div>
               <div className="p-6">
                 <div className="flex items-center justify-between">
@@ -167,7 +167,7 @@ export function ApplicationsGrid() {
       <div className="section-shell">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-20">
           <div className="overflow-hidden rounded-md">
-            <img src={images.applications} alt="Extruder barrel fitted with band heaters on a factory floor" width={1536} height={1024} loading="lazy" className="aspect-[4/3] w-full object-cover" />
+            <img src={images.applications} alt="Extruder barrel fitted with band heaters on a factory floor" width={1536} height={1024} loading="eager" decoding="async" className="aspect-[4/3] w-full object-cover" />
           </div>
           <div>
             <SectionLabel>Where our heaters work</SectionLabel>
@@ -233,7 +233,7 @@ export function ProcessSection() {
 export function IndustrialBreak() {
   return (
     <section className="relative overflow-hidden bg-surface-dark py-24 text-primary-foreground lg:py-32">
-      <img src={images.workshop} alt="" aria-hidden="true" width={1536} height={1024} loading="lazy" className="absolute inset-0 h-full w-full object-cover opacity-20" />
+      <img src={images.workshop} alt="" aria-hidden="true" width={1536} height={1024} loading="eager" decoding="async" className="absolute inset-0 h-full w-full object-cover opacity-20" />
       <div className="section-shell relative">
         <p className="max-w-4xl text-2xl font-bold leading-[1.35] sm:text-4xl">
           &ldquo;Tell us the temperature, the medium and the space available. The heater follows from there.&rdquo;

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import { AboutSection, ApplicationsGrid, CTASection, FeaturedProducts, Hero, IndustrialBreak, ProcessSection, ProductCategories, TrustStrip, WhyHeatOnn } from "@/components/home-sections";
+import { AboutSection, ApplicationsGrid, CTASection, Hero, IndustrialBreak, ProductCategories, TrustStrip } from "@/components/home-sections";
 
 const title = "HeatOnn | Industrial Heater Manufacturer in Bengaluru";
 const description = "HeatOnn manufactures cartridge, band, ceramic band, strip and customised electric heating elements for moulding, extrusion and process industries.";
@@ -31,10 +31,7 @@ function Index() {
         <TrustStrip />
         <AboutSection />
         <ProductCategories />
-        <FeaturedProducts />
         <ApplicationsGrid />
-        <WhyHeatOnn />
-        <ProcessSection />
         <IndustrialBreak />
         <CTASection />
       </main>

@@ -34,6 +34,7 @@ function Blogs() {
           eyebrow="Blogs"
           title="Notes from the workshop."
           description="Short, practical writing on heater selection, fitting and failure — published as topics come up in day-to-day enquiries."
+          variant="centered"
         />
         <section className="section-shell py-20 lg:py-28">
           <h2 className="text-2xl font-extrabold uppercase">Upcoming topics</h2>
