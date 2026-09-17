@@ -3,8 +3,8 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { AboutSection, ApplicationsGrid, CTASection, Hero, IndustrialBreak, ProductCategories, TrustStrip } from "@/components/home-sections";
 
-const title = "HeatOnn | Industrial Heater Manufacturer in Bengaluru";
-const description = "HeatOnn manufactures cartridge, band, ceramic band, strip and customised electric heating elements for moulding, extrusion and process industries.";
+const title = "HEAT-ONN | Industrial Heating Solutions";
+const description = "HEAT-ONN provides precision thermal engineering, industrial heating elements and temperature sensors for OEM and process applications.";
 
 export const Route = createFileRoute("/")({
   head: () => ({

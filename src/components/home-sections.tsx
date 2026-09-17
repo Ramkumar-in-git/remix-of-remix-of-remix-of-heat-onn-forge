@@ -18,11 +18,11 @@ export function Hero() {
           <div className="reveal-up max-w-3xl">
             <SectionLabel light>Heating Elements · Manufactured in Bengaluru</SectionLabel>
             <h1 className="text-4xl font-extrabold uppercase leading-[1.02] sm:text-6xl lg:text-7xl xl:text-[5.4rem]">
-              Precision heaters.<br />
-              <span className="text-heat">Built</span> to your process.
+              Precision thermal engineering<br />
+              and <span className="text-heat">Industrial Heating solution</span>
             </h1>
             <p className="mt-7 max-w-xl text-base leading-7 text-primary-foreground/65 lg:text-lg">
-              HeatOnn manufactures cartridge, band, ceramic band, strip and fully customised electric heating elements for moulding, extrusion, packaging and process industries.
+              HEAT-ONN manufactures precision heating elements and temperature sensors for OEMs and demanding industrial applications.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Button asChild variant="heat" size="lg"><Link to="/products">View heater range <ArrowRight /></Link></Button>
@@ -99,7 +99,7 @@ export function ProductCategories() {
             <h2 className="text-4xl font-extrabold uppercase sm:text-5xl">Our heaters</h2>
           </div>
           <p className="max-w-xl text-base leading-7 text-muted-foreground lg:justify-self-end">
-            Five core categories, each built to the dimensions, wattage and termination your assembly requires.
+            Eight manufacturing categories, each built around the dimensions, wattage, temperature and termination your assembly requires.
           </p>
         </div>
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
