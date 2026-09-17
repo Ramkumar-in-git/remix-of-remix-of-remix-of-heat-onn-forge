@@ -4,7 +4,6 @@ import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { navigation } from "@/data/catalog";
-import logoAsset from "@/assets/heatonn-mark.png.asset.json";
 
 export function Wordmark({ inverse = false, className = "" }: { inverse?: boolean; className?: string }) {
   return (
@@ -14,15 +13,15 @@ export function Wordmark({ inverse = false, className = "" }: { inverse?: boolea
       aria-label="HeatOnn home"
     >
       <img
-        src={logoAsset.url}
-        alt="HeatOnn logo"
+        src="/images/heatonn-mark.png"
+        alt="HEAT-ONN company logo"
         width={424}
         height={283}
         decoding="async"
         className={`h-8 w-auto shrink-0 transition-transform duration-300 group-hover:scale-105 sm:h-9 ${inverse ? "rounded-sm bg-primary-foreground p-1" : ""}`}
       />
       <span className="text-lg font-extrabold uppercase tracking-tight sm:text-xl">
-        Heat<span className="text-heat">Onn</span>
+        HEAT<span className="text-heat">-ONN</span>
       </span>
     </Link>
   );
